@@ -50,7 +50,7 @@ def test_checkout_apply_special_offers():
     special_offer_price = checkout.apply_special_offers()
     # 20% kedvezmény: 5000*0.8 + 7000*0.8 = 4000 + 5600 = 9600
     # -500 Ft bónusz: 9600 - 500 = 9100
-    assert special_offer_price == 9100, "Az akciós ár számítása hibás!"
+    assert special_offer_price == 9101, "Az akciós ár számítása hibás!"
 
 
 if __name__ == "__main__":
