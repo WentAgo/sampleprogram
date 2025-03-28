@@ -1,0 +1,275 @@
+_add_special_offer_bonus
+
+_calculate_discount
+
+_finalize_special_offer_price:
+	max
+
+_sum_discounted_prices:
+	sum
+
+_apply_discounts_to_products
+
+_calculate_total_after_discounts:
+	_sum_discounted_prices:
+	    sum
+	_add_special_offer_bonus
+
+_get_discounted_prices:
+	_calculate_discount
+	_apply_discounts_to_products
+
+apply_special_offers:
+	_get_discounted_prices:
+		_calculate_discount
+		_apply_discounts_to_products
+	_calculate_total_after_discounts:
+		_sum_discounted_prices:
+		    sum
+		_add_special_offer_bonus
+	_finalize_special_offer_price:
+		max
+
+_calculate_final_price
+
+_apply_discount:
+	_calculate_final_price
+
+process_payment:
+	calculate_total:
+		get_total_price:
+			sum
+	_apply_discount
+
+calculate_total:
+	get_total_price:
+		sum
+
+__init__
+
+get_total_price:
+	sum
+
+add_product:
+	append
+
+__init__
+
+__init__
+
+tesztekre bontva:
+
+test_product_creation:
+    cc = ["test_product_creation", "Product"]
+    test_product_creation : [["Product"]]
+
+test_cart_add_product:
+    cc = ["test_cart_add_product", "Cart"]
+    cc = ["test_cart_add_product", "Product"]
+    cc = ["test_cart_add_product", "add_product", "append"]
+    cc = ["test_cart_add_product", "len"]
+    test_cart_add_product: [["Cart"],["Product"],["add_product", "append"],["len"]]
+
+test_cart_get_total_price:
+    cc = ["test_cart_get_total_price", "Cart"]
+    cc = ["test_cart_get_total_price", "add_product", "append", "Product"]
+    cc = ["test_cart_get_total_price", "get_total_price", "sum"]
+    test_cart_get_total_price: [["Cart"],["add_product", "append", "Product"],["get_total_price", "sum"]]
+
+test_checkout_calculate_total:
+    cc = ["test_checkout_calculate_total", "Cart"]
+    cc = ["test_checkout_calculate_total", "add_product", "append", "Product"]
+    cc = ["test_checkout_calculate_total", "Checkout"]
+    cc = ["test_checkout_calculate_total", "calculate_total", "get_total_price", "sum"]
+    test_checkout_calculate_total: [["Cart"],["add_product", "append", "Product"],["Checkout"],["calculate_total", "get_total_price", "sum"]]
+
+test_checkout_process_payment:
+    cc = ["test_checkout_process_payment", "Cart"]
+    cc = ["test_checkout_process_payment", "add_product", "append", "Product"]
+    cc = ["test_checkout_process_payment", "Checkout"]
+    cc = ["test_checkout_process_payment", "process_payment", "calculate_total", "get_total_price", "sum"]
+    cc = ["test_checkout_process_payment", "process_payment", "apply_discount", "_calculate_final_price"]
+    test_checkout_process_payment: [["Cart"],["add_product", "append", "Product"],["Checkout"],["process_payment", "calculate_total", "get_total_price", "sum"],["process_payment", "apply_discount", "_calculate_final_price"]]
+
+test_checkout_apply_special_offers:
+    cc = ["test_checkout_apply_special_offers", "Cart"]
+    cc = ["test_checkout_apply_special_offers", "add_product", "append", "Product"]
+    cc = ["test_checkout_apply_special_offers", "Checkout"]
+    cc = ["test_checkout_apply_special_offers", "apply_special_offers", "_get_discounted_prices", "_calculate_discount"]
+    cc = ["test_checkout_apply_special_offers", "apply_special_offers", "_get_discounted_prices", "_apply_discounts_to_products"]
+    cc = ["test_checkout_apply_special_offers", "apply_special_offers", "_calculate_total_after_discounts", "_sum_discounted_prices", "sum"]
+    cc = ["test_checkout_apply_special_offers", "apply_special_offers", "_calculate_total_after_discounts", "_add_special_offer_bonus"]
+    cc = ["test_checkout_apply_special_offers", "apply_special_offers", "_finalize_special_offer_price", "max"]
+    test_checkout_apply_special_offers: [["Cart"],["add_product", "append", "Product"],["Checkout"],["apply_special_offers", "_get_discounted_prices", "_calculate_discount"],["apply_special_offers", "_get_discounted_prices", "_apply_discounts_to_products"],["apply_special_offers", "_calculate_total_after_discounts", "_sum_discounted_prices", "sum"],["apply_special_offers", "_calculate_total_after_discounts", "_add_special_offer_bonus"],["_finalize_special_offer_price", "max"]]
+
+call_chains = {test_product_creation : [["Product"]], test_cart_add_product: [["Cart"],["Product"],["add_product", "append"],["len"]], test_cart_get_total_price: [["Cart"],["add_product", "append", "Product"],["get_total_price", "sum"]], test_checkout_calculate_total: [["Cart"],["add_product", "append", "Product"],["Checkout"],["calculate_total", "get_total_price", "sum"]], test_checkout_process_payment: [["Cart"],["add_product", "append", "Product"],["Checkout"],["process_payment", "calculate_total", "get_total_price", "sum"],["process_payment", "apply_discount", "_calculate_final_price"]],  test_checkout_apply_special_offers: [["Cart"],["add_product", "append", "Product"],["Checkout"],["apply_special_offers", "_get_discounted_prices", "_calculate_discount"],["apply_special_offers", "_get_discounted_prices", "_apply_discounts_to_products"],["apply_special_offers", "_calculate_total_after_discounts", "_sum_discounted_prices", "sum"],["apply_special_offers", "_calculate_total_after_discounts", "_add_special_offer_bonus"],["_finalize_special_offer_price", "max"]]}
+
+
+{
+  "tests.test_main.test_product_creation": [
+    [
+      "Product"
+    ]
+  ],
+  "tests.test_main.test_cart_add_product": [
+    [
+      "Cart"
+    ],
+    [
+      "Product"
+    ],
+    [
+      "add_product"
+    ],
+  ],
+  "tests.test_main.test_cart_get_total_price": [
+    [
+      "Cart"
+    ],
+    [
+      "Product",
+      "add_product"
+    ],
+    [
+      "get_total_price"
+    ]
+  ],
+  "tests.test_main.test_checkout_calculate_total": [
+    [
+      "Cart"
+    ],
+    [
+      "Product",
+      "add_product"
+    ],
+    [
+      "Checkout"
+    ],
+    [
+      "calculate_total",
+      "get_total_price"
+    ]
+  ],
+  "tests.test_main.test_checkout_process_payment": [
+    [
+      "Cart"
+    ],
+    [
+      "Product",
+      "add_product"
+    ],
+    [
+      "Checkout"
+    ],
+    [
+      "process_payment",
+      "calculate_total",
+      "get_total_price"
+    ],
+    [
+      "process_payment",
+      "apply_discount",
+      "_calculate_final_price"
+    ]
+  ],
+  "tests.test_main.test_checkout_apply_special_offers": [
+    [
+      "Cart"
+    ],
+    [
+      "Product",
+      "add_product"
+    ],
+    [
+      "Checkout"
+    ],
+    [
+      "apply_special_offers",
+      "_get_discounted_prices",
+      "_calculate_discount"
+    ],
+    [
+      "apply_special_offers",
+      "_get_discounted_prices",
+      "_apply_discounts_to_products"
+    ],
+    [
+      "apply_special_offers",
+      "_calculate_total_after_discounts",
+      "_sum_discounted_prices"
+    ],
+    [
+      "apply_special_offers",
+      "_calculate_total_after_discounts",
+      "_add_special_offer_bonus"
+    ],
+    [
+      "_finalize_special_offer_price"
+    ]
+  ]
+}
+
+
+tracefunc()
+    aktuális chainlista tracker = 0
+    aktuális testlista tracker = 0
+    if event==call:
+        nézd meg, hogy test_kezdetű-e a neve
+        ha igen -> JSON-be kulcs, aktuális testlista neve: test neve + elérési út/class
+        ha nem: nézd meg, hogy a chainlista 0-e
+            ha igen: JSON-be értéknek új listaennek az elemnek a nevével
+                aktuális chainlista neve: method + class
+            ha nem: JSON-ne az előző chainlistához hozzáfűzzük
+
+    if event==exit:
+        nézd meg, hogy lezárja-e az aktuális chainlistát
+            ha igen: aktuális chainlista tracker = 0
+        nézd meg, hgoy lezárja-e az aktális testlistát
+            ha igen: testlista tracker = 0
+
+
+ilyen végeredmény kellene:
+"test_checkout_apply_special_offers.None.E:\\suli\\szakdoga\\peldaProgram\\tests\\test_main.py": [
+        [
+            "__init__.Cart.E:\\suli\\szakdoga\\peldaProgram\\main.py"
+        ],
+        [
+            "__init__.Product.E:\\suli\\szakdoga\\peldaProgram\\main.py"
+        ],
+        [
+            "add_product.Cart.E:\\suli\\szakdoga\\peldaProgram\\main.py"
+        ],
+        [
+            "__init__.Product.E:\\suli\\szakdoga\\peldaProgram\\main.py"
+        ],
+        [
+            "add_product.Cart.E:\\suli\\szakdoga\\peldaProgram\\main.py"
+        ],
+        [
+            "__init__.Checkout.E:\\suli\\szakdoga\\peldaProgram\\main.py"
+        ],
+        [
+            "apply_special_offers.Checkout.E:\\suli\\szakdoga\\peldaProgram\\main.py",
+            "_get_discounted_prices.Checkout.E:\\suli\\szakdoga\\peldaProgram\\main.py",
+            "_calculate_discount.Checkout.E:\\suli\\szakdoga\\peldaProgram\\main.py"
+        ],
+        [
+            "apply_special_offers.Checkout.E:\\suli\\szakdoga\\peldaProgram\\main.py",
+            "_get_discounted_prices.Checkout.E:\\suli\\szakdoga\\peldaProgram\\main.py",
+            "_apply_discounts_to_products.Checkout.E:\\suli\\szakdoga\\peldaProgram\\main.py"
+        ],
+        [
+            "apply_special_offers.Checkout.E:\\suli\\szakdoga\\peldaProgram\\main.py",
+            "_calculate_total_after_discounts.Checkout.E:\\suli\\szakdoga\\peldaProgram\\main.py",
+            "_sum_discounted_prices.Checkout.E:\\suli\\szakdoga\\peldaProgram\\main.py"
+        ],
+        [
+            "apply_special_offers.Checkout.E:\\suli\\szakdoga\\peldaProgram\\main.py",
+            "_calculate_total_after_discounts.Checkout.E:\\suli\\szakdoga\\peldaProgram\\main.py",
+            "_add_special_offer_bonus.Checkout.E:\\suli\\szakdoga\\peldaProgram\\main.py"
+        ],
+        [
+            "apply_special_offers.Checkout.E:\\suli\\szakdoga\\peldaProgram\\main.py",
+            "_finalize_special_offer_price.Checkout.E:\\suli\\szakdoga\\peldaProgram\\main.py"
+        ]
+    ]

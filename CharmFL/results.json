@@ -1,0 +1,437 @@
+{
+    "files": [
+        {
+            "pathToRoot": "E:\\suli\\szakdoga\\peldaprogram\\",
+            "relativePath": "main.py",
+            "classes": [
+                {
+                    "name": "Product",
+                    "line": "1",
+                    "tar": 0.0,
+                    "och": 0.0,
+                    "wong2": -5.0,
+                    "dstar": 0.0,
+                    "barinel": 0.0,
+                    "methods": [
+                        {
+                            "name": "__init__",
+                            "line": "2",
+                            "tar": 0.0,
+                            "och": 0.0,
+                            "wong2": -5.0,
+                            "dstar": 0.0,
+                            "barinel": 0.0,
+                            "statements": [
+                                {
+                                    "line": "3",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -5.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                },
+                                {
+                                    "line": "4",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -5.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Cart",
+                    "line": "6",
+                    "tar": 0.0,
+                    "och": 0.0,
+                    "wong2": -5.0,
+                    "dstar": 0.0,
+                    "barinel": 0.0,
+                    "methods": [
+                        {
+                            "name": "__init__",
+                            "line": "7",
+                            "tar": 0.0,
+                            "och": 0.0,
+                            "wong2": -5.0,
+                            "dstar": 0.0,
+                            "barinel": 0.0,
+                            "statements": [
+                                {
+                                    "line": "8",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -5.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "add_product",
+                            "line": "10",
+                            "tar": 0.0,
+                            "och": 0.0,
+                            "wong2": -5.0,
+                            "dstar": 0.0,
+                            "barinel": 0.0,
+                            "statements": [
+                                {
+                                    "line": "11",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -5.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "get_total_price",
+                            "line": "14",
+                            "tar": 0.0,
+                            "och": 0.0,
+                            "wong2": -3.0,
+                            "dstar": 0.0,
+                            "barinel": 0.0,
+                            "statements": [
+                                {
+                                    "line": "15",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -3.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Checkout",
+                    "line": "17",
+                    "tar": 0.0,
+                    "och": 0.0,
+                    "wong2": -3.0,
+                    "dstar": 0.0,
+                    "barinel": 0.0,
+                    "methods": [
+                        {
+                            "name": "__init__",
+                            "line": "18",
+                            "tar": 0.0,
+                            "och": 0.0,
+                            "wong2": -3.0,
+                            "dstar": 0.0,
+                            "barinel": 0.0,
+                            "statements": [
+                                {
+                                    "line": "19",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -3.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "calculate_total",
+                            "line": "21",
+                            "tar": 0.0,
+                            "och": 0.0,
+                            "wong2": -2.0,
+                            "dstar": 0.0,
+                            "barinel": 0.0,
+                            "statements": [
+                                {
+                                    "line": "22",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -2.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "process_payment",
+                            "line": "24",
+                            "tar": 0.0,
+                            "och": 0.0,
+                            "wong2": -1.0,
+                            "dstar": 0.0,
+                            "barinel": 0.0,
+                            "statements": [
+                                {
+                                    "line": "25",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -1.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                },
+                                {
+                                    "line": "26",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -1.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "_apply_discount",
+                            "line": "28",
+                            "tar": 0.0,
+                            "och": 0.0,
+                            "wong2": -1.0,
+                            "dstar": 0.0,
+                            "barinel": 0.0,
+                            "statements": [
+                                {
+                                    "line": "29",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -1.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "_calculate_final_price",
+                            "line": "31",
+                            "tar": 0.0,
+                            "och": 0.0,
+                            "wong2": -1.0,
+                            "dstar": 0.0,
+                            "barinel": 0.0,
+                            "statements": [
+                                {
+                                    "line": "32",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -1.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "apply_special_offers",
+                            "line": "34",
+                            "tar": 0.0,
+                            "och": 0.0,
+                            "wong2": -1.0,
+                            "dstar": 0.0,
+                            "barinel": 0.0,
+                            "statements": [
+                                {
+                                    "line": "35",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -1.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                },
+                                {
+                                    "line": "36",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -1.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                },
+                                {
+                                    "line": "37",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -1.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                },
+                                {
+                                    "line": "38",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -1.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "_get_discounted_prices",
+                            "line": "40",
+                            "tar": 0.0,
+                            "och": 0.0,
+                            "wong2": -1.0,
+                            "dstar": 0.0,
+                            "barinel": 0.0,
+                            "statements": [
+                                {
+                                    "line": "41",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -1.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                },
+                                {
+                                    "line": "42",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -1.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "_calculate_total_after_discounts",
+                            "line": "44",
+                            "tar": 0.0,
+                            "och": 0.0,
+                            "wong2": -1.0,
+                            "dstar": 0.0,
+                            "barinel": 0.0,
+                            "statements": [
+                                {
+                                    "line": "45",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -1.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "_calculate_discount",
+                            "line": "47",
+                            "tar": 0.0,
+                            "och": 0.0,
+                            "wong2": -1.0,
+                            "dstar": 0.0,
+                            "barinel": 0.0,
+                            "statements": [
+                                {
+                                    "line": "48",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -1.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "_apply_discounts_to_products",
+                            "line": "50",
+                            "tar": 0.0,
+                            "och": 0.0,
+                            "wong2": -1.0,
+                            "dstar": 0.0,
+                            "barinel": 0.0,
+                            "statements": [
+                                {
+                                    "line": "51",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -1.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "_sum_discounted_prices",
+                            "line": "53",
+                            "tar": 0.0,
+                            "och": 0.0,
+                            "wong2": -1.0,
+                            "dstar": 0.0,
+                            "barinel": 0.0,
+                            "statements": [
+                                {
+                                    "line": "54",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -1.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "_add_special_offer_bonus",
+                            "line": "56",
+                            "tar": 0.0,
+                            "och": 0.0,
+                            "wong2": -1.0,
+                            "dstar": 0.0,
+                            "barinel": 0.0,
+                            "statements": [
+                                {
+                                    "line": "57",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -1.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "_finalize_special_offer_price",
+                            "line": "59",
+                            "tar": 0.0,
+                            "och": 0.0,
+                            "wong2": -1.0,
+                            "dstar": 0.0,
+                            "barinel": 0.0,
+                            "statements": [
+                                {
+                                    "line": "60",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -1.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "faulty": "false"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
