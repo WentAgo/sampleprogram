@@ -1,45 +1,43 @@
-# Példaprogram
+# Sample program
 
-Ez a program egy egyszerű webshopot modellez, ahol termékeket lehet a kosárba helyezni, majd a fizetési folyamat részeként kedvezményeket és akciós árajánlatokat is lehet alkalmazni.
-
----
-
-## Fájl struktúra
-
-- **`Product` osztály:** Egy terméket reprezentál, amely tartalmazza a termék nevét és árát.
-- **`Cart` osztály:** A kosár kezelésére szolgál, termékek hozzáadását és az árak összesítését végzi.
-- **`Checkout` osztály:** A fizetési folyamatot modellezi, kedvezményeket és akciós árajánlatokat kezel.
+It models a simple webshop where you can add products to your shopping cart and then apply discounts and promotions as part of the checkout process.
 
 ---
 
-A példaprogram tartalmaz egyszerű, összetett és láncba fűzött metódusokat is.
+## File structure
 
-A példaprogramhoz a tests package-ben található test_main.py-ban vannak tesztek írva.
+- **`Product` class:** Represents a product, containing the product name and price.
+- **`Cart` class:** Used to manage the cart, add products and aggregate prices.
+- **`Checkout` class:** Models the checkout process, handles discounts and promotions.
+
+The example program includes simple, complex and chained methods.
+
+Tests are written for the example program in test_main.py in the tests package.
 
 ---
 
-## Kimenet példa
+## Output example
 
-### Kód:
+### Code:
 ```python
-p1 = Product("Pulóver", 5000)
-p2 = Product("Nadrág", 7000)
-p3 = Product("Cipő", 12000)
+    p1 = Product("Sweater", 5000)
+    p2 = Product("Trousers", 7000)
+    p3 = Product("Shoes", 12000)
 
-cart = Cart()
-cart.add_product(p1)
-cart.add_product(p2)
-cart.add_product(p3)
+    cart = Cart()
+    cart.add_product(p1)
+    cart.add_product(p2)
+    cart.add_product(p3)
 
-checkout = Checkout(cart)
-print("Teljes ár kedvezmények nélkül:", checkout.calculate_total())
-print("Kedvezményes ár (10%):", checkout.process_payment())
-print("Akciós ár (20% kedvezmény és bónusz):", checkout.apply_special_offers())
+    checkout = Checkout(cart)
+    print("Total price without discounts: ", checkout.calculate_total())
+    print("Discounted price (10%): ", checkout.process_payment())
+    print("Special price (20% discount and bonus): ", checkout.apply_special_offers())
 ```
 
-### Kimenet:
+### Output:
 ```
-Teljes ár kedvezmények nélkül: 24000
-Kedvezményes ár (10%): 21600
-Akciós ár (20% kedvezmény és bónusz): 18700
+Total price without discounts:  24000
+Discounted price (10%):  21600.0
+Special price (20% discount and bonus):  18700.0
 ```

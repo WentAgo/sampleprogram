@@ -70,26 +70,28 @@ def decorate_module_functions(module, module_name, test_folder):
 def save_call_chains_to_json(output_file):
     with open(output_file, "w") as f:
         json.dump(call_chains, f, indent=4)
-    print(f"Hívásláncok mentve: {output_file}")
+    print(f"Call chains saved: {output_file}")
 
 
 def convert_call_chains(call_chains):
     converted = {}
     for test_name, call_list in call_chains.items():
-        converted.setdefault(test_name, [])
+        chains = []
         for call_chain in call_list:
-            current_path = []
+            path = []
             for i, call in enumerate(call_chain):
-                for name, indent in call.items():
-                    name = name.split(".", 1)[-1]
-                    while current_path and current_path[-1][1] >= indent:
-                        current_path.pop()
-                    current_path.append((name, indent))
-                    if i == len(call_chain) - 1 or (
-                            i + 1 < len(call_chain) and list(call_chain[i + 1].values())[0] <= indent):
-                        new_chain = [node[0] for node in current_path]
-                        if new_chain not in converted[test_name]:
-                            converted[test_name].append(new_chain)
+                name, indent = next(iter(call.items()))
+                name = name.split(".", 1)[-1]
+                while path and path[-1][1] >= indent:
+                    path.pop()
+                path.append((name, indent))
+                is_last = i == len(call_chain) - 1
+                next_indent = list(call_chain[i + 1].values())[0] if not is_last else None
+                if is_last or next_indent <= indent:
+                    new_chain = [n for n, _ in path]
+                    if new_chain not in chains:
+                        chains.append(new_chain)
+        converted[test_name] = chains
     return converted
 
 
@@ -101,15 +103,10 @@ def trace_test_files(test_folder, output_file):
         module_name = test_file[:-3]
         module = __import__(f"{test_folder}.{module_name}", fromlist=["*"])
         decorate_module_functions(module, module_name, test_folder)
-
-    call_chains = convert_call_chains(call_chains)
-
-    for test_file in test_files:
-        module_name = test_file[:-3]
-        module = __import__(f"{test_folder}.{module_name}", fromlist=["*"])
         if hasattr(module, "__main__"):
             module.__main__()
 
+    call_chains = convert_call_chains(call_chains)
     save_call_chains_to_json(output_file)
 
 

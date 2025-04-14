@@ -29,7 +29,7 @@ class Checkout:
         return self._calculate_final_price(total)
 
     def _calculate_final_price(self, total):
-        return total * 0.9  # 10% kedvezmény
+        return total * 0.9
 
     def apply_special_offers(self):
         discounted_prices = self._get_discounted_prices()
@@ -45,7 +45,7 @@ class Checkout:
         return self._sum_discounted_prices(discounted_prices) + self._add_special_offer_bonus()
 
     def _calculate_discount(self, price):
-        return price * 0.8  # 20% kedvezmény
+        return price * 0.8
 
     def _apply_discounts_to_products(self, discounts):
         return [discount for discount in discounts]
@@ -54,16 +54,16 @@ class Checkout:
         return sum(discounted_prices)
 
     def _add_special_offer_bonus(self):
-        return -500  # Akciós bónusz: 500 Ft kedvezmény, ha megfelel az ajánlatnak
+        return -500
 
     def _finalize_special_offer_price(self, total):
-        return max(total, 0)  # Az ár nem lehet negatív
+        return max(total, 0)
 
 if __name__ == "__main__":
-    print("Ez a program egy egyszerű webshopot modellez, ahol termékeket lehet a kosárba helyezni, majd a fizetési folyamat részeként kedvezményeket és akciós árajánlatokat is lehet alkalmazni.")
-    p1 = Product("Pulóver", 5000)
-    p2 = Product("Nadrág", 7000)
-    p3 = Product("Cipő", 12000)
+    print("It models a simple webshop where you can add products to your shopping cart and then apply discounts and promotions as part of the checkout process.")
+    p1 = Product("Sweater", 5000)
+    p2 = Product("Trousers", 7000)
+    p3 = Product("Shoes", 12000)
 
     cart = Cart()
     cart.add_product(p1)
@@ -71,6 +71,6 @@ if __name__ == "__main__":
     cart.add_product(p3)
 
     checkout = Checkout(cart)
-    print("Teljes ár kedvezmények nélkül:", checkout.calculate_total())
-    print("Kedvezményes ár (10%):", checkout.process_payment())
-    print("Akciós ár (20% kedvezmény és bónusz):", checkout.apply_special_offers())
+    print("Total price without discounts: ", checkout.calculate_total())
+    print("Discounted price (10%): ", checkout.process_payment())
+    print("Special price (20% discount and bonus): ", checkout.apply_special_offers())

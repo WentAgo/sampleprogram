@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.12 (peldaprogram)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (peldaprogram)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (sampleprogram)" project-jdk-type="Python SDK" />
 </project>
