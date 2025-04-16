@@ -11,6 +11,8 @@
                     "och": 0.41,
                     "wong2": -4.0,
                     "dstar": 0.2,
+                    "barinel": 0.17,
+                    "modified_barinel": 0.2,
                     "methods": [
                         {
                             "name": "__init__",
@@ -19,6 +21,8 @@
                             "och": 0.41,
                             "wong2": -4.0,
                             "dstar": 0.2,
+                            "barinel": 0.17,
+                            "modified_barinel": 0.2,
                             "statements": [
                                 {
                                     "line": "3",
@@ -26,8 +30,9 @@
                                     "och": 0.41,
                                     "wong2": -4.0,
                                     "dstar": 0.2,
-                                    "faulty": "false",
-                                    "tar_rank": 16.5
+                                    "barinel": 0.17,
+                                    "modified_barinel": 0.2,
+                                    "faulty": "false"
                                 },
                                 {
                                     "line": "4",
@@ -35,8 +40,9 @@
                                     "och": 0.41,
                                     "wong2": -4.0,
                                     "dstar": 0.2,
-                                    "faulty": "false",
-                                    "tar_rank": 16.5
+                                    "barinel": 0.17,
+                                    "modified_barinel": 0.2,
+                                    "faulty": "false"
                                 }
                             ]
                         }
@@ -49,6 +55,8 @@
                     "och": 0.45,
                     "wong2": -3.0,
                     "dstar": 0.25,
+                    "barinel": 0.2,
+                    "modified_barinel": 0.2,
                     "methods": [
                         {
                             "name": "__init__",
@@ -57,6 +65,8 @@
                             "och": 0.45,
                             "wong2": -3.0,
                             "dstar": 0.25,
+                            "barinel": 0.2,
+                            "modified_barinel": 0.2,
                             "statements": [
                                 {
                                     "line": "8",
@@ -64,8 +74,9 @@
                                     "och": 0.45,
                                     "wong2": -3.0,
                                     "dstar": 0.25,
-                                    "faulty": "false",
-                                    "tar_rank": 14.5
+                                    "barinel": 0.2,
+                                    "modified_barinel": 0.2,
+                                    "faulty": "false"
                                 }
                             ]
                         },
@@ -76,6 +87,8 @@
                             "och": 0.45,
                             "wong2": -3.0,
                             "dstar": 0.25,
+                            "barinel": 0.2,
+                            "modified_barinel": 0.2,
                             "statements": [
                                 {
                                     "line": "11",
@@ -83,8 +96,9 @@
                                     "och": 0.45,
                                     "wong2": -3.0,
                                     "dstar": 0.25,
-                                    "faulty": "false",
-                                    "tar_rank": 14.5
+                                    "barinel": 0.2,
+                                    "modified_barinel": 0.2,
+                                    "faulty": "false"
                                 }
                             ]
                         },
@@ -95,6 +109,8 @@
                             "och": 0.0,
                             "wong2": -3.0,
                             "dstar": 0.0,
+                            "barinel": 0.0,
+                            "modified_barinel": 0.0,
                             "statements": [
                                 {
                                     "line": "15",
@@ -102,8 +118,9 @@
                                     "och": 0.0,
                                     "wong2": -3.0,
                                     "dstar": 0.0,
-                                    "faulty": "false",
-                                    "tar_rank": 20.5
+                                    "barinel": 0.0,
+                                    "modified_barinel": 0.0,
+                                    "faulty": "false"
                                 }
                             ]
                         }
@@ -116,6 +133,8 @@
                     "och": 0.58,
                     "wong2": -1.0,
                     "dstar": 0.5,
+                    "barinel": 0.33,
+                    "modified_barinel": 0.33,
                     "methods": [
                         {
                             "name": "__init__",
@@ -124,6 +143,8 @@
                             "och": 0.58,
                             "wong2": -1.0,
                             "dstar": 0.5,
+                            "barinel": 0.33,
+                            "modified_barinel": 0.33,
                             "statements": [
                                 {
                                     "line": "19",
@@ -131,8 +152,9 @@
                                     "och": 0.58,
                                     "wong2": -1.0,
                                     "dstar": 0.5,
-                                    "faulty": "false",
-                                    "tar_rank": 13.0
+                                    "barinel": 0.33,
+                                    "modified_barinel": 0.33,
+                                    "faulty": "false"
                                 }
                             ]
                         },
@@ -143,6 +165,8 @@
                             "och": 0.0,
                             "wong2": -2.0,
                             "dstar": 0.0,
+                            "barinel": 0.0,
+                            "modified_barinel": 0.0,
                             "statements": [
                                 {
                                     "line": "22",
@@ -150,8 +174,9 @@
                                     "och": 0.0,
                                     "wong2": -2.0,
                                     "dstar": 0.0,
-                                    "faulty": "false",
-                                    "tar_rank": 20.5
+                                    "barinel": 0.0,
+                                    "modified_barinel": 0.0,
+                                    "faulty": "false"
                                 }
                             ]
                         },
@@ -162,6 +187,8 @@
                             "och": 0.0,
                             "wong2": -1.0,
                             "dstar": 0.0,
+                            "barinel": 0.0,
+                            "modified_barinel": 0.0,
                             "statements": [
                                 {
                                     "line": "25",
@@ -169,8 +196,9 @@
                                     "och": 0.0,
                                     "wong2": -1.0,
                                     "dstar": 0.0,
-                                    "faulty": "false",
-                                    "tar_rank": 20.5
+                                    "barinel": 0.0,
+                                    "modified_barinel": 0.0,
+                                    "faulty": "false"
                                 },
                                 {
                                     "line": "26",
@@ -178,8 +206,9 @@
                                     "och": 0.0,
                                     "wong2": -1.0,
                                     "dstar": 0.0,
-                                    "faulty": "false",
-                                    "tar_rank": 20.5
+                                    "barinel": 0.0,
+                                    "modified_barinel": 0.0,
+                                    "faulty": "false"
                                 }
                             ]
                         },
@@ -190,6 +219,8 @@
                             "och": 0.0,
                             "wong2": -1.0,
                             "dstar": 0.0,
+                            "barinel": 0.0,
+                            "modified_barinel": 0.0,
                             "statements": [
                                 {
                                     "line": "29",
@@ -197,8 +228,9 @@
                                     "och": 0.0,
                                     "wong2": -1.0,
                                     "dstar": 0.0,
-                                    "faulty": "false",
-                                    "tar_rank": 20.5
+                                    "barinel": 0.0,
+                                    "modified_barinel": 0.0,
+                                    "faulty": "false"
                                 }
                             ]
                         },
@@ -209,6 +241,8 @@
                             "och": 0.0,
                             "wong2": -1.0,
                             "dstar": 0.0,
+                            "barinel": 0.0,
+                            "modified_barinel": 0.0,
                             "statements": [
                                 {
                                     "line": "32",
@@ -216,8 +250,9 @@
                                     "och": 0.0,
                                     "wong2": -1.0,
                                     "dstar": 0.0,
-                                    "faulty": "false",
-                                    "tar_rank": 20.5
+                                    "barinel": 0.0,
+                                    "modified_barinel": 0.0,
+                                    "faulty": "false"
                                 }
                             ]
                         },
@@ -228,6 +263,8 @@
                             "och": 1.0,
                             "wong2": 1.0,
                             "dstar": 0.0,
+                            "barinel": 1.0,
+                            "modified_barinel": 1.0,
                             "statements": [
                                 {
                                     "line": "35",
@@ -235,8 +272,9 @@
                                     "och": 1.0,
                                     "wong2": 1.0,
                                     "dstar": 0.0,
-                                    "faulty": "false",
-                                    "tar_rank": 6.5
+                                    "barinel": 1.0,
+                                    "modified_barinel": 1.0,
+                                    "faulty": "false"
                                 },
                                 {
                                     "line": "36",
@@ -244,8 +282,9 @@
                                     "och": 1.0,
                                     "wong2": 1.0,
                                     "dstar": 0.0,
-                                    "faulty": "false",
-                                    "tar_rank": 6.5
+                                    "barinel": 1.0,
+                                    "modified_barinel": 1.0,
+                                    "faulty": "false"
                                 },
                                 {
                                     "line": "37",
@@ -253,8 +292,9 @@
                                     "och": 1.0,
                                     "wong2": 1.0,
                                     "dstar": 0.0,
-                                    "faulty": "false",
-                                    "tar_rank": 6.5
+                                    "barinel": 1.0,
+                                    "modified_barinel": 1.0,
+                                    "faulty": "false"
                                 },
                                 {
                                     "line": "38",
@@ -262,8 +302,9 @@
                                     "och": 1.0,
                                     "wong2": 1.0,
                                     "dstar": 0.0,
-                                    "faulty": "false",
-                                    "tar_rank": 6.5
+                                    "barinel": 1.0,
+                                    "modified_barinel": 1.0,
+                                    "faulty": "false"
                                 }
                             ]
                         },
@@ -274,6 +315,8 @@
                             "och": 1.0,
                             "wong2": 1.0,
                             "dstar": 0.0,
+                            "barinel": 1.0,
+                            "modified_barinel": 1.0,
                             "statements": [
                                 {
                                     "line": "41",
@@ -281,8 +324,9 @@
                                     "och": 1.0,
                                     "wong2": 1.0,
                                     "dstar": 0.0,
-                                    "faulty": "false",
-                                    "tar_rank": 6.5
+                                    "barinel": 1.0,
+                                    "modified_barinel": 1.0,
+                                    "faulty": "false"
                                 },
                                 {
                                     "line": "42",
@@ -290,8 +334,9 @@
                                     "och": 1.0,
                                     "wong2": 1.0,
                                     "dstar": 0.0,
-                                    "faulty": "false",
-                                    "tar_rank": 6.5
+                                    "barinel": 1.0,
+                                    "modified_barinel": 1.0,
+                                    "faulty": "false"
                                 }
                             ]
                         },
@@ -302,6 +347,8 @@
                             "och": 1.0,
                             "wong2": 1.0,
                             "dstar": 0.0,
+                            "barinel": 1.0,
+                            "modified_barinel": 1.0,
                             "statements": [
                                 {
                                     "line": "45",
@@ -309,8 +356,9 @@
                                     "och": 1.0,
                                     "wong2": 1.0,
                                     "dstar": 0.0,
-                                    "faulty": "false",
-                                    "tar_rank": 6.5
+                                    "barinel": 1.0,
+                                    "modified_barinel": 1.0,
+                                    "faulty": "false"
                                 }
                             ]
                         },
@@ -321,6 +369,8 @@
                             "och": 1.0,
                             "wong2": 1.0,
                             "dstar": 0.0,
+                            "barinel": 1.0,
+                            "modified_barinel": 1.0,
                             "statements": [
                                 {
                                     "line": "48",
@@ -328,8 +378,9 @@
                                     "och": 1.0,
                                     "wong2": 1.0,
                                     "dstar": 0.0,
-                                    "faulty": "false",
-                                    "tar_rank": 6.5
+                                    "barinel": 1.0,
+                                    "modified_barinel": 1.0,
+                                    "faulty": "false"
                                 }
                             ]
                         },
@@ -340,6 +391,8 @@
                             "och": 1.0,
                             "wong2": 1.0,
                             "dstar": 0.0,
+                            "barinel": 1.0,
+                            "modified_barinel": 1.0,
                             "statements": [
                                 {
                                     "line": "51",
@@ -347,8 +400,9 @@
                                     "och": 1.0,
                                     "wong2": 1.0,
                                     "dstar": 0.0,
-                                    "faulty": "false",
-                                    "tar_rank": 6.5
+                                    "barinel": 1.0,
+                                    "modified_barinel": 1.0,
+                                    "faulty": "false"
                                 }
                             ]
                         },
@@ -359,6 +413,8 @@
                             "och": 1.0,
                             "wong2": 1.0,
                             "dstar": 0.0,
+                            "barinel": 1.0,
+                            "modified_barinel": 1.0,
                             "statements": [
                                 {
                                     "line": "54",
@@ -366,8 +422,9 @@
                                     "och": 1.0,
                                     "wong2": 1.0,
                                     "dstar": 0.0,
-                                    "faulty": "false",
-                                    "tar_rank": 6.5
+                                    "barinel": 1.0,
+                                    "modified_barinel": 1.0,
+                                    "faulty": "false"
                                 }
                             ]
                         },
@@ -378,6 +435,8 @@
                             "och": 1.0,
                             "wong2": 1.0,
                             "dstar": 0.0,
+                            "barinel": 1.0,
+                            "modified_barinel": 1.0,
                             "statements": [
                                 {
                                     "line": "57",
@@ -385,8 +444,9 @@
                                     "och": 1.0,
                                     "wong2": 1.0,
                                     "dstar": 0.0,
-                                    "faulty": "false",
-                                    "tar_rank": 6.5
+                                    "barinel": 1.0,
+                                    "modified_barinel": 1.0,
+                                    "faulty": "false"
                                 }
                             ]
                         },
@@ -397,6 +457,8 @@
                             "och": 1.0,
                             "wong2": 1.0,
                             "dstar": 0.0,
+                            "barinel": 1.0,
+                            "modified_barinel": 1.0,
                             "statements": [
                                 {
                                     "line": "60",
@@ -404,8 +466,9 @@
                                     "och": 1.0,
                                     "wong2": 1.0,
                                     "dstar": 0.0,
-                                    "faulty": "false",
-                                    "tar_rank": 6.5
+                                    "barinel": 1.0,
+                                    "modified_barinel": 1.0,
+                                    "faulty": "false"
                                 }
                             ]
                         }
