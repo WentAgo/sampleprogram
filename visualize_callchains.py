@@ -37,7 +37,7 @@ def compute_top_down_positions(G):
             x = (i + 1) * spacing
             y = -level * 0.5
             if i % 2 == 1:
-                y -= 0.15  # nagyobb eltérés a fedés elkerülésére
+                y -= 0.15
             pos[node] = (x, y)
     return pos
 
