@@ -1,37 +1,44 @@
 import json
 import re
-from collections import defaultdict, deque
-
 import networkx as nx
 import plotly.graph_objects as go
+from collections import deque, defaultdict
 
-def get_levels(G, root_nodes):
+def convert_method_name(method: str) -> str:
+    return re.sub(r'\.(\w+)\[(\w+)\]', lambda m: f'.{m.group(2)}_{m.group(1)}', method)
+
+def compute_top_down_positions(G):
     levels = defaultdict(list)
-    visited = set()
-    queue = deque([(node, 0) for node in root_nodes])
+    indegree = {node: 0 for node in G.nodes()}
+    for u, v in G.edges():
+        indegree[v] += 1
 
+    queue = deque()
+    for node, deg in indegree.items():
+        if deg == 0:
+            queue.append((node, 0))
+
+    visited = set()
     while queue:
         node, level = queue.popleft()
         if node in visited:
             continue
         visited.add(node)
         levels[level].append(node)
-        for child in G.successors(node):
-            if child not in visited:
-                queue.append((child, level + 1))
-    return levels
+        for neighbor in G.successors(node):
+            queue.append((neighbor, level + 1.8))
 
-def create_top_down_layout(G):
-    roots = [node for node in G.nodes if G.in_degree(node) == 0]
-    levels = get_levels(G, roots)
     pos = {}
-    y_gap = -1.5
-    x_gap = 2.5
-
+    max_width = max(len(nodes) for nodes in levels.values())
     for level, nodes in levels.items():
+        count = len(nodes)
+        spacing = 1.0 / (count + 1)
         for i, node in enumerate(nodes):
-            pos[node] = (i * x_gap, level * y_gap)
-
+            x = (i + 1) * spacing
+            y = -level * 0.5
+            if i % 2 == 1:
+                y -= 0.15  # nagyobb eltérés a fedés elkerülésére
+            pos[node] = (x, y)
     return pos
 
 def create_figure(G, pos, title_text, filename):
@@ -45,8 +52,8 @@ def create_figure(G, pos, title_text, filename):
 
     edge_trace = go.Scatter(
         x=edge_x, y=edge_y,
-        line=dict(width=1, color='#888'),
-        hoverinfo='none',
+        line=dict(width=1.2, color='#888'),
+        hoverinfo='text',
         mode='lines')
 
     node_x = []
@@ -62,7 +69,7 @@ def create_figure(G, pos, title_text, filename):
         x=node_x, y=node_y,
         mode='markers+text',
         text=node_text,
-        textposition="bottom center",
+        textposition="top center",
         hoverinfo='text',
         marker=dict(
             showscale=False,
@@ -75,9 +82,9 @@ def create_figure(G, pos, title_text, filename):
                         title=dict(text=title_text, font=dict(size=20)),
                         showlegend=False,
                         hovermode='closest',
-                        margin=dict(b=20, l=20, r=20, t=60),
+                        margin=dict(b=20, l=5, r=5, t=40),
                         xaxis=dict(showgrid=False, zeroline=False),
-                        yaxis=dict(showgrid=False, zeroline=False),
+                        yaxis=dict(showgrid=False, zeroline=False)
                     ))
 
     fig.write_html(filename)
@@ -86,37 +93,29 @@ with open("callchains.json") as f:
     callchains = json.load(f)
 
 G = nx.DiGraph()
-
 for test_name, chains in callchains.items():
     for chain in chains:
         src = test_name
         dst = chain[0]
         G.add_edge(src, dst, test=test_name)
         for i in range(len(chain) - 1):
-            src = chain[i]
-            dst = chain[i + 1]
-            G.add_edge(src, dst, test=test_name)
+            G.add_edge(chain[i], chain[i + 1], test=test_name)
 
-pos = create_top_down_layout(G)
-create_figure(G, pos, 'Call Chain Graph', 'html/callchains.html')
+pos = compute_top_down_positions(G)
+create_figure(G, pos, "Call Chain Graph", "html/callchains.html")
 
 for test_name, chains in callchains.items():
     G_test = nx.DiGraph()
-
     for chain in chains:
         src = test_name
         dst = chain[0]
         G_test.add_edge(src, dst, test=test_name)
         for i in range(len(chain) - 1):
-            src = chain[i]
-            dst = chain[i + 1]
-            G_test.add_edge(src, dst, test=test_name)
+            G_test.add_edge(chain[i], chain[i + 1], test=test_name)
 
-    pos_test = create_top_down_layout(G_test)
-    create_figure(G_test, pos_test, f"{test_name} Call Chain", f"html/tests/{test_name}_call_chain.html")
-
-def convert_method_name(method: str) -> str:
-    return re.sub(r'\.(\w+)\[(\w+)\]', lambda m: f'.{m.group(2)}_{m.group(1)}', method)
+    pos_test = compute_top_down_positions(G_test)
+    filename = f"html/tests/{test_name}_call_chain.html"
+    create_figure(G_test, pos_test, f"{test_name} Call Chain", filename)
 
 all_methods = set()
 for chains in callchains.values():
@@ -136,12 +135,11 @@ for method in all_methods:
             continue
         G_method.add_edge(test_name, chain[0], test=test_name)
         for i in range(len(chain) - 1):
-            src = chain[i]
-            dst = chain[i + 1]
-            G_method.add_edge(src, dst, test=test_name)
+            G_method.add_edge(chain[i], chain[i + 1], test=test_name)
 
     if len(G_method) == 0:
         continue
 
-    pos_method = create_top_down_layout(G_method)
-    create_figure(G_method, pos_method, f"{method} Call Chains", f"html/methods/{convert_method_name(method)}_call_chain.html")
+    pos_method = compute_top_down_positions(G_method)
+    filename = f"html/methods/{convert_method_name(method)}_call_chain.html"
+    create_figure(G_method, pos_method, f"{method} Call Chains", filename)
