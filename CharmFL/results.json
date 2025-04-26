@@ -7,39 +7,39 @@
                 {
                     "name": "Product",
                     "line": "1",
-                    "tar": 0.5,
-                    "och": 0.41,
+                    "tar": 0.52,
+                    "och": 0.29,
                     "wong2": -4.0,
-                    "dstar": 0.2,
+                    "dstar": 0.17,
                     "barinel": 0.17,
                     "modified_barinel": 0.2,
                     "methods": [
                         {
                             "name": "__init__",
                             "line": "2",
-                            "tar": 0.5,
-                            "och": 0.41,
+                            "tar": 0.52,
+                            "och": 0.29,
                             "wong2": -4.0,
-                            "dstar": 0.2,
+                            "dstar": 0.17,
                             "barinel": 0.17,
                             "modified_barinel": 0.2,
                             "statements": [
                                 {
                                     "line": "3",
-                                    "tar": 0.5,
-                                    "och": 0.41,
+                                    "tar": 0.52,
+                                    "och": 0.29,
                                     "wong2": -4.0,
-                                    "dstar": 0.2,
+                                    "dstar": 0.17,
                                     "barinel": 0.17,
                                     "modified_barinel": 0.2,
                                     "faulty": "false"
                                 },
                                 {
                                     "line": "4",
-                                    "tar": 0.5,
-                                    "och": 0.41,
+                                    "tar": 0.52,
+                                    "och": 0.29,
                                     "wong2": -4.0,
-                                    "dstar": 0.2,
+                                    "dstar": 0.17,
                                     "barinel": 0.17,
                                     "modified_barinel": 0.2,
                                     "faulty": "false"
@@ -51,29 +51,29 @@
                 {
                     "name": "Cart",
                     "line": "6",
-                    "tar": 0.56,
-                    "och": 0.45,
+                    "tar": 0.58,
+                    "och": 0.32,
                     "wong2": -3.0,
-                    "dstar": 0.25,
+                    "dstar": 0.2,
                     "barinel": 0.2,
                     "modified_barinel": 0.2,
                     "methods": [
                         {
                             "name": "__init__",
                             "line": "7",
-                            "tar": 0.56,
-                            "och": 0.45,
+                            "tar": 0.58,
+                            "och": 0.32,
                             "wong2": -3.0,
-                            "dstar": 0.25,
+                            "dstar": 0.2,
                             "barinel": 0.2,
                             "modified_barinel": 0.2,
                             "statements": [
                                 {
                                     "line": "8",
-                                    "tar": 0.56,
-                                    "och": 0.45,
+                                    "tar": 0.58,
+                                    "och": 0.32,
                                     "wong2": -3.0,
-                                    "dstar": 0.25,
+                                    "dstar": 0.2,
                                     "barinel": 0.2,
                                     "modified_barinel": 0.2,
                                     "faulty": "false"
@@ -83,19 +83,19 @@
                         {
                             "name": "add_product",
                             "line": "10",
-                            "tar": 0.56,
-                            "och": 0.45,
+                            "tar": 0.58,
+                            "och": 0.32,
                             "wong2": -3.0,
-                            "dstar": 0.25,
+                            "dstar": 0.2,
                             "barinel": 0.2,
                             "modified_barinel": 0.2,
                             "statements": [
                                 {
                                     "line": "11",
-                                    "tar": 0.56,
-                                    "och": 0.45,
+                                    "tar": 0.58,
+                                    "och": 0.32,
                                     "wong2": -3.0,
-                                    "dstar": 0.25,
+                                    "dstar": 0.2,
                                     "barinel": 0.2,
                                     "modified_barinel": 0.2,
                                     "faulty": "false"
@@ -129,29 +129,29 @@
                 {
                     "name": "Checkout",
                     "line": "17",
-                    "tar": 0.71,
-                    "och": 0.58,
+                    "tar": 0.73,
+                    "och": 0.41,
                     "wong2": -1.0,
-                    "dstar": 0.5,
+                    "dstar": 0.33,
                     "barinel": 0.33,
                     "modified_barinel": 0.33,
                     "methods": [
                         {
                             "name": "__init__",
                             "line": "18",
-                            "tar": 0.71,
-                            "och": 0.58,
+                            "tar": 0.73,
+                            "och": 0.41,
                             "wong2": -1.0,
-                            "dstar": 0.5,
+                            "dstar": 0.33,
                             "barinel": 0.33,
                             "modified_barinel": 0.33,
                             "statements": [
                                 {
                                     "line": "19",
-                                    "tar": 0.71,
-                                    "och": 0.58,
+                                    "tar": 0.73,
+                                    "och": 0.41,
                                     "wong2": -1.0,
-                                    "dstar": 0.5,
+                                    "dstar": 0.33,
                                     "barinel": 0.33,
                                     "modified_barinel": 0.33,
                                     "faulty": "false"
@@ -260,18 +260,18 @@
                             "name": "apply_special_offers",
                             "line": "34",
                             "tar": 1.0,
-                            "och": 1.0,
+                            "och": 0.71,
                             "wong2": 1.0,
-                            "dstar": 0.0,
+                            "dstar": 1.0,
                             "barinel": 1.0,
                             "modified_barinel": 1.0,
                             "statements": [
                                 {
                                     "line": "35",
                                     "tar": 1.0,
-                                    "och": 1.0,
+                                    "och": 0.71,
                                     "wong2": 1.0,
-                                    "dstar": 0.0,
+                                    "dstar": 1.0,
                                     "barinel": 1.0,
                                     "modified_barinel": 1.0,
                                     "faulty": "false"
@@ -279,9 +279,9 @@
                                 {
                                     "line": "36",
                                     "tar": 1.0,
-                                    "och": 1.0,
+                                    "och": 0.71,
                                     "wong2": 1.0,
-                                    "dstar": 0.0,
+                                    "dstar": 1.0,
                                     "barinel": 1.0,
                                     "modified_barinel": 1.0,
                                     "faulty": "false"
@@ -289,9 +289,9 @@
                                 {
                                     "line": "37",
                                     "tar": 1.0,
-                                    "och": 1.0,
+                                    "och": 0.71,
                                     "wong2": 1.0,
-                                    "dstar": 0.0,
+                                    "dstar": 1.0,
                                     "barinel": 1.0,
                                     "modified_barinel": 1.0,
                                     "faulty": "false"
@@ -299,9 +299,9 @@
                                 {
                                     "line": "38",
                                     "tar": 1.0,
-                                    "och": 1.0,
+                                    "och": 0.71,
                                     "wong2": 1.0,
-                                    "dstar": 0.0,
+                                    "dstar": 1.0,
                                     "barinel": 1.0,
                                     "modified_barinel": 1.0,
                                     "faulty": "false"
@@ -312,18 +312,18 @@
                             "name": "_get_discounted_prices",
                             "line": "40",
                             "tar": 1.0,
-                            "och": 1.0,
+                            "och": 0.71,
                             "wong2": 1.0,
-                            "dstar": 0.0,
+                            "dstar": 1.0,
                             "barinel": 1.0,
                             "modified_barinel": 1.0,
                             "statements": [
                                 {
                                     "line": "41",
                                     "tar": 1.0,
-                                    "och": 1.0,
+                                    "och": 0.71,
                                     "wong2": 1.0,
-                                    "dstar": 0.0,
+                                    "dstar": 1.0,
                                     "barinel": 1.0,
                                     "modified_barinel": 1.0,
                                     "faulty": "false"
@@ -331,9 +331,9 @@
                                 {
                                     "line": "42",
                                     "tar": 1.0,
-                                    "och": 1.0,
+                                    "och": 0.71,
                                     "wong2": 1.0,
-                                    "dstar": 0.0,
+                                    "dstar": 1.0,
                                     "barinel": 1.0,
                                     "modified_barinel": 1.0,
                                     "faulty": "false"
@@ -344,18 +344,18 @@
                             "name": "_calculate_total_after_discounts",
                             "line": "44",
                             "tar": 1.0,
-                            "och": 1.0,
+                            "och": 0.71,
                             "wong2": 1.0,
-                            "dstar": 0.0,
+                            "dstar": 1.0,
                             "barinel": 1.0,
                             "modified_barinel": 1.0,
                             "statements": [
                                 {
                                     "line": "45",
                                     "tar": 1.0,
-                                    "och": 1.0,
+                                    "och": 0.71,
                                     "wong2": 1.0,
-                                    "dstar": 0.0,
+                                    "dstar": 1.0,
                                     "barinel": 1.0,
                                     "modified_barinel": 1.0,
                                     "faulty": "false"
@@ -366,18 +366,18 @@
                             "name": "_calculate_discount",
                             "line": "47",
                             "tar": 1.0,
-                            "och": 1.0,
+                            "och": 0.71,
                             "wong2": 1.0,
-                            "dstar": 0.0,
+                            "dstar": 1.0,
                             "barinel": 1.0,
                             "modified_barinel": 1.0,
                             "statements": [
                                 {
                                     "line": "48",
                                     "tar": 1.0,
-                                    "och": 1.0,
+                                    "och": 0.71,
                                     "wong2": 1.0,
-                                    "dstar": 0.0,
+                                    "dstar": 1.0,
                                     "barinel": 1.0,
                                     "modified_barinel": 1.0,
                                     "faulty": "false"
@@ -388,18 +388,18 @@
                             "name": "_apply_discounts_to_products",
                             "line": "50",
                             "tar": 1.0,
-                            "och": 1.0,
+                            "och": 0.71,
                             "wong2": 1.0,
-                            "dstar": 0.0,
+                            "dstar": 1.0,
                             "barinel": 1.0,
                             "modified_barinel": 1.0,
                             "statements": [
                                 {
                                     "line": "51",
                                     "tar": 1.0,
-                                    "och": 1.0,
+                                    "och": 0.71,
                                     "wong2": 1.0,
-                                    "dstar": 0.0,
+                                    "dstar": 1.0,
                                     "barinel": 1.0,
                                     "modified_barinel": 1.0,
                                     "faulty": "false"
@@ -410,18 +410,18 @@
                             "name": "_sum_discounted_prices",
                             "line": "53",
                             "tar": 1.0,
-                            "och": 1.0,
+                            "och": 0.71,
                             "wong2": 1.0,
-                            "dstar": 0.0,
+                            "dstar": 1.0,
                             "barinel": 1.0,
                             "modified_barinel": 1.0,
                             "statements": [
                                 {
                                     "line": "54",
                                     "tar": 1.0,
-                                    "och": 1.0,
+                                    "och": 0.71,
                                     "wong2": 1.0,
-                                    "dstar": 0.0,
+                                    "dstar": 1.0,
                                     "barinel": 1.0,
                                     "modified_barinel": 1.0,
                                     "faulty": "false"
@@ -432,18 +432,18 @@
                             "name": "_add_special_offer_bonus",
                             "line": "56",
                             "tar": 1.0,
-                            "och": 1.0,
+                            "och": 0.71,
                             "wong2": 1.0,
-                            "dstar": 0.0,
+                            "dstar": 1.0,
                             "barinel": 1.0,
                             "modified_barinel": 1.0,
                             "statements": [
                                 {
                                     "line": "57",
                                     "tar": 1.0,
-                                    "och": 1.0,
+                                    "och": 0.71,
                                     "wong2": 1.0,
-                                    "dstar": 0.0,
+                                    "dstar": 1.0,
                                     "barinel": 1.0,
                                     "modified_barinel": 1.0,
                                     "faulty": "false"
@@ -454,20 +454,104 @@
                             "name": "_finalize_special_offer_price",
                             "line": "59",
                             "tar": 1.0,
-                            "och": 1.0,
+                            "och": 0.71,
                             "wong2": 1.0,
-                            "dstar": 0.0,
+                            "dstar": 1.0,
                             "barinel": 1.0,
                             "modified_barinel": 1.0,
                             "statements": [
                                 {
                                     "line": "60",
                                     "tar": 1.0,
-                                    "och": 1.0,
+                                    "och": 0.71,
                                     "wong2": 1.0,
-                                    "dstar": 0.0,
+                                    "dstar": 1.0,
                                     "barinel": 1.0,
                                     "modified_barinel": 1.0,
+                                    "faulty": "false"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "pathToRoot": "E:\\suli\\szakdoga\\sampleprogram\\",
+            "relativePath": "calculator.py",
+            "classes": [
+                {
+                    "name": "Calculator",
+                    "line": "1",
+                    "tar": 0.48,
+                    "och": 0.27,
+                    "wong2": -5.0,
+                    "dstar": 0.14,
+                    "barinel": 0.14,
+                    "modified_barinel": 0.5,
+                    "methods": [
+                        {
+                            "name": "add",
+                            "line": "2",
+                            "tar": 0.73,
+                            "och": 0.41,
+                            "wong2": -1.0,
+                            "dstar": 0.33,
+                            "barinel": 0.33,
+                            "modified_barinel": 0.5,
+                            "statements": [
+                                {
+                                    "line": "3",
+                                    "tar": 0.73,
+                                    "och": 0.41,
+                                    "wong2": -1.0,
+                                    "dstar": 0.33,
+                                    "barinel": 0.33,
+                                    "modified_barinel": 0.5,
+                                    "faulty": "false"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "multiply",
+                            "line": "5",
+                            "tar": 0.65,
+                            "och": 0.35,
+                            "wong2": -2.0,
+                            "dstar": 0.25,
+                            "barinel": 0.25,
+                            "modified_barinel": 1.0,
+                            "statements": [
+                                {
+                                    "line": "6",
+                                    "tar": 0.65,
+                                    "och": 0.35,
+                                    "wong2": -2.0,
+                                    "dstar": 0.25,
+                                    "barinel": 0.25,
+                                    "modified_barinel": 1.0,
+                                    "faulty": "false"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "square",
+                            "line": "8",
+                            "tar": 0.0,
+                            "och": 0.0,
+                            "wong2": -2.0,
+                            "dstar": 0.0,
+                            "barinel": 0.0,
+                            "modified_barinel": 0.0,
+                            "statements": [
+                                {
+                                    "line": "9",
+                                    "tar": 0.0,
+                                    "och": 0.0,
+                                    "wong2": -2.0,
+                                    "dstar": 0.0,
+                                    "barinel": 0.0,
+                                    "modified_barinel": 0.0,
                                     "faulty": "false"
                                 }
                             ]

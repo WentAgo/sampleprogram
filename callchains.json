@@ -1,4 +1,45 @@
 {
+    "tests.test_calculator.test_add": [
+        [
+            "calculator.add[Calculator]"
+        ],
+        [
+            "calculator.square[Calculator]"
+        ]
+    ],
+    "tests.test_calculator.test_add_two_two": [
+        [
+            "calculator.add[Calculator]"
+        ]
+    ],
+    "tests.test_calculator.test_calculator": [
+        [
+            "calculator.add[Calculator]"
+        ],
+        [
+            "calculator.multiply[Calculator]"
+        ]
+    ],
+    "tests.test_calculator.test_multiply_zero_seven": [
+        [
+            "calculator.multiply[Calculator]"
+        ]
+    ],
+    "tests.test_calculator.test_multiply_zero_six": [
+        [
+            "calculator.multiply[Calculator]"
+        ]
+    ],
+    "tests.test_calculator.test_multiply_zero_zero": [
+        [
+            "calculator.multiply[Calculator]"
+        ]
+    ],
+    "tests.test_calculator.test_square": [
+        [
+            "calculator.square[Calculator]"
+        ]
+    ],
     "tests.test_main.test_cart_add_product": [
         [
             "main.__init__[Cart]"

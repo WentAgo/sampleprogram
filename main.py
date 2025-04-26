@@ -54,7 +54,7 @@ class Checkout:
         return sum(discounted_prices)
 
     def _add_special_offer_bonus(self):
-        return -499
+        return -500
 
     def _finalize_special_offer_price(self, total):
         return max(total, 0)
