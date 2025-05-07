@@ -115,7 +115,7 @@ for test_name, chains in callchains.items():
 
     pos_test = compute_top_down_positions(G_test)
     filename = f"html/tests/{test_name}_call_chain.html"
-    create_figure(G_test, pos_test, f"{test_name} Call Chain", filename)
+    create_figure(G_test, pos_test, f"{test_name} call chain", filename)
 
 all_methods = set()
 for chains in callchains.values():
@@ -142,4 +142,4 @@ for method in all_methods:
 
     pos_method = compute_top_down_positions(G_method)
     filename = f"html/methods/{convert_method_name(method)}_call_chain.html"
-    create_figure(G_method, pos_method, f"{method} Call Chain", filename)
+    create_figure(G_method, pos_method, f"{convert_method_name(method)} call chain", filename)
