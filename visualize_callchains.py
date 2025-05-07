@@ -102,7 +102,7 @@ for test_name, chains in callchains.items():
             G.add_edge(chain[i], chain[i + 1], test=test_name)
 
 pos = compute_top_down_positions(G)
-create_figure(G, pos, "Call Chain Graph", "html/callchains.html")
+create_figure(G, pos, "Call chains", "html/callchains.html")
 
 for test_name, chains in callchains.items():
     G_test = nx.DiGraph()
@@ -142,4 +142,4 @@ for method in all_methods:
 
     pos_method = compute_top_down_positions(G_method)
     filename = f"html/methods/{convert_method_name(method)}_call_chain.html"
-    create_figure(G_method, pos_method, f"{method} Call Chains", filename)
+    create_figure(G_method, pos_method, f"{method} Call Chain", filename)
